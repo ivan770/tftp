@@ -1,0 +1,22 @@
+[package]
+name = "tftp"
+description = "A package with TFTP protocol definition"
+repository = "https://github.com/ivan770/tftp"
+
+version = "0.1.0"
+authors = ["ivan770 <leshenko.ivan770@gmail.com>"]
+license = "MIT"
+
+edition = "2018"
+
+[features]
+default = ["alloc"]
+alloc = []
+
+[dependencies]
+ascii = "1"
+enumn = "0.1"
+displaydoc = "0.2"
+
+[dev-dependencies]
+expect-test = "1"
