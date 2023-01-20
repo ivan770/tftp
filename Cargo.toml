@@ -10,13 +10,13 @@ license = "MIT"
 edition = "2018"
 
 [features]
-default = ["alloc"]
+default = ["alloc", "ascii/std", "displaydoc/std"]
 alloc = []
 
 [dependencies]
-ascii = "1"
+ascii = { version = "1", default-features = false }
 enumn = "0.1"
-displaydoc = "0.2"
+displaydoc = { version = "0.2", default-features = false }
 
 [dev-dependencies]
 expect-test = "1"
